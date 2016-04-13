@@ -380,16 +380,24 @@ Name | Description
 
 <a name="logistic-regression"></a>
 ### Class 9: Logistic Regression
-* Yelp votes homework due ([notebook](homework/10_yelp_votes_homework.ipynb))
-* Logistic regression ([notebook](notebooks/12_logistic_regression.ipynb))
+
+**After this lesson you will be able to:**
+* Describe the kind of problem Logistic regression can solve
+* Create a logistic regression model
+* Describe the elements of a Confusion Matrix
+
+**Topics/Highlights:**
+* Logistic regression ([notebook](notebooks/09_logistic_regression.ipynb))
     * [Glass identification dataset](https://archive.ics.uci.edu/ml/datasets/Glass+Identification)
-* Exercise with Titanic data ([notebook](notebooks/12_titanic_confusion.ipynb), [data](data/titanic.csv), [data dictionary](https://www.kaggle.com/c/titanic/data))
-* Confusion matrix ([slides](slides/12_confusion_matrix.pdf), [notebook](notebooks/12_titanic_confusion.ipynb))
+    * [e and natural log - what are they?](http://localhost:8888/notebooks/Documents/GA/GA_Data_Science_course/SEA-DAT2/notebooks/09_e_log_examples.ipynb)
+* Exercise with Titanic data ([notebook](notebooks/09_titanic_logistic_regression_exercise.ipynb), [data](data/titanic.csv), [data dictionary](https://www.kaggle.com/c/titanic/data))
+* Confusion matrix ([slides](slides/09_confusion_matrix.pdf), [notebook](notebooks/09_confusion_matrix.ipynb))
 
 **Homework:**
+* work through the code samples in the "Confusion matrix of Titanic predictions" section in [the 09_confusion_matrix.ipynb notebook](notebooks/09_confusion_matrix.ipynb) to see an enample of turning a multi value feature into a 
 * If you aren't yet comfortable with all of the confusion matrix terminology, watch Rahul Patwari's videos on [Intuitive sensitivity and specificity](https://www.youtube.com/watch?v=U4_3fditnWg) (9 minutes) and [The tradeoff between sensitivity and specificity](https://www.youtube.com/watch?v=vtYDyGGeQyo) (13 minutes).
-* Video/reading assignment on [ROC curves and AUC](homework/13_roc_auc.md)
-* Video/reading assignment on [cross-validation](homework/13_cross_validation.md)
+* Video/reading assignment on [ROC curves and AUC](homework/10_roc_auc.md)
+* Video/reading assignment on [cross-validation](homework/10_cross_validation.md)
 
 **Logistic Regression Resources:**
 * To go deeper into logistic regression, read the first three sections of Chapter 4 of [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/), or watch the [first three videos](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/) (30 minutes) from that chapter.
@@ -405,19 +413,19 @@ Name | Description
 
 -----
 
-<a name="advanced-model></a>
+<a name="advanced-model"></a>
 ### Class 10: Advanced Model Evaluation
-* Data preparation ([notebook](notebooks/13_advanced_model_evaluation.ipynb))
+* Data preparation [(notebook)](notebooks/10_advanced_model_evaluation.ipynb)
     * Handling missing values
     * Handling categorical features (review)
 * ROC curves and AUC
-    * Discuss the [video/reading assignment](homework/13_roc_auc.md)
-    * Exercise: drawing an ROC curve ([slides](slides/13_drawing_roc.pdf))
+    * Discuss the [video/reading assignment](homework/10_roc_auc.md)
+    * Exercise: drawing an ROC curve ([slides](slides/10_drawing_roc.pdf))
     * Return to the main notebook
 * Cross-validation
-    * Discuss the [video/reading assignment](homework/13_cross_validation.md) and associated [notebook](notebooks/13_cross_validation.ipynb)
+    * Discuss the [video/reading assignment](homework/10_cross_validation.md) and associated [notebook](notebooks/13_cross_validation.ipynb)
     * Return to the main notebook
-* Exercise with bank marketing data ([notebook](notebooks/13_bank_exercise.ipynb), [data](data/bank-additional.csv), [data dictionary](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing))
+* Exercise with bank marketing data ([notebook](notebooks/10_bank_exercise.ipynb), [data](data/bank-additional.csv), [data dictionary](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing))
 
 **Homework:**
 * Reading assignment on [spam filtering](homework/14_spam_filtering.md)
