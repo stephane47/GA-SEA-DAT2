@@ -15,8 +15,8 @@ Tuesday | Thursday
 **Foundations of data modeling**|
  | 3/31: [L06 Intro to Regression](#intro-to-regression), **Project Question and Dataset Due**
 4/5: [L07 Intro to Classification - K nearest neighbor](#knn) | 4/7: [L08 Evaluating Model Fit](#evaluating-fit)
-4/12: [L09 Classifying with Logistic Regression](#logistic-regression) | 4/14: [L10 Advanced model evaluation](#advanced_model)
-4/19: [L11 Regularization and Clustering](#class-11-regularization-and-clustering)| 4/21: L12: **First Project Presentations** + bonus topics
+4/12: [L09 Classifying with Logistic Regression](#logistic-regression) | 4/14: [L10 Advanced model evaluation](#advanced-model)
+4/19: [L11 Standardization and Clustering](#class-11-standardization-and-clustering)| 4/21: L12: **First Project Presentations** + bonus topics
 **Data science in the real world**|
 4/26: [L13 Natural Language Processing](#nlp) | 4/28: L14 Dimensionality reduction, **Draft Paper Due**
 5/3: [L15 Decision Trees](#decision) | 5/5: [L16 Ensembling, Bagging and Random Forests](#ensemble)
@@ -394,7 +394,7 @@ Name | Description
 * Confusion matrix ([slides](slides/09_confusion_matrix.pdf), [notebook](notebooks/09_confusion_matrix.ipynb))
 
 **Homework:**
-* work through the code samples in the "Confusion matrix of Titanic predictions" section in [the 09_confusion_matrix.ipynb notebook](notebooks/09_confusion_matrix.ipynb) to see an enample of turning a multi value feature into a 
+* Work through the code samples in the "Confusion matrix of Titanic predictions" section in [the 09_confusion_matrix.ipynb notebook](notebooks/09_confusion_matrix.ipynb) to see an enample of turning a multi value feature into a 
 * If you aren't yet comfortable with all of the confusion matrix terminology, watch Rahul Patwari's videos on [Intuitive sensitivity and specificity](https://www.youtube.com/watch?v=U4_3fditnWg) (9 minutes) and [The tradeoff between sensitivity and specificity](https://www.youtube.com/watch?v=vtYDyGGeQyo) (13 minutes).
 * Video/reading assignment on [ROC curves and AUC](homework/10_roc_auc.md)
 * Video/reading assignment on [cross-validation](homework/10_cross_validation.md)
@@ -415,23 +415,29 @@ Name | Description
 
 <a name="advanced-model"></a>
 ### Class 10: Advanced Model Evaluation
+
+**After this lesson you will be able to:**
+* Prepare your data by overcoming issues such as null values
+* Be able to measure accuracy of Logistic Regression with ROC curves and AUC
+* Be able to use cross validation to measure model accuracy more effectively than with test/train split
+
+**Topics/Highlights:**
 * Data preparation [(notebook)](notebooks/10_advanced_model_evaluation.ipynb)
     * Handling missing values
     * Handling categorical features (review)
-* ROC curves and AUC
-    * Discuss the [video/reading assignment](homework/10_roc_auc.md)
-    * Exercise: drawing an ROC curve ([slides](slides/10_drawing_roc.pdf))
-    * Return to the main notebook
-* Cross-validation
-    * Discuss the [video/reading assignment](homework/10_cross_validation.md) and associated [notebook](notebooks/13_cross_validation.ipynb)
-    * Return to the main notebook
+* Advanced Model evaluation
+	* ROC curves and AUC
+	    * Discuss the [video/reading assignment](homework/10_roc_auc.md)
+	    * Exercise: drawing an ROC curve ([slides](slides/10_drawing_roc.pdf))
+	    * Return to the main notebook
+	* Cross-validation
+	    * Discuss the [video/reading assignment](homework/10_cross_validation.md) and related [notebook](notebooks/10_cross_validation.ipynb)
+	    * Return to the main notebook
 * Exercise with bank marketing data ([notebook](notebooks/10_bank_exercise.ipynb), [data](data/bank-additional.csv), [data dictionary](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing))
 
 **Homework:**
-* Reading assignment on [spam filtering](homework/14_spam_filtering.md)
-* Read these [Introduction to Probability](https://docs.google.com/presentation/d/1cM2dVbJgTWMkHoVNmYlB9df6P2H8BrjaqAcZTaLe9dA/edit#slide=id.gfc3caad2_00) slides, or skim section 2.1 of the [OpenIntro Statistics textbook](https://www.openintro.org/stat/textbook.php?stat_book=os) (12 pages). Pay specific attention to the following terms: probability, mutually exclusive, sample space, independent.
-* **Optional:** Try to gain an understanding of conditional probability from this [visualization](http://setosa.io/conditional/).
-* **Optional:** For an intuitive introduction to Bayes' theorem, read these posts on [wealth and happiness](http://www.quora.com/What-is-an-intuitive-explanation-of-Bayes-Rule/answer/Michael-Hochster), [ducks](https://planspacedotorg.wordpress.com/2014/02/23/bayes-rule-for-ducks/), or [legos](http://www.countbayesie.com/blog/2015/2/18/bayes-theorem-with-lego).
+* **Finalize your First Project Presentations!**  Your first project presentation is next Thursday April 21st.
+	* [Requirements for the presentations](/project/README.md)
 
 **ROC Resources:**
 * Rahul Patwari has a great video on [ROC Curves](https://www.youtube.com/watch?v=21Igj5Pr6u4) (12 minutes).
@@ -450,7 +456,7 @@ Name | Description
 
 -----
 
-### Class 11: Regularization and Clustering
+### Class 11: Standardization and Clustering
 **By the end of this lesson you will be able to:**
 
 * Standardize features
@@ -521,7 +527,7 @@ Name | Description
 
 -----
 
-<a name="decision></a>
+<a name="decision"></a>
 ### Class 15: Decision Trees
 **By the end of this lesson you will be able to:**
 
@@ -547,7 +553,7 @@ Name | Description
 
 -----
 
-<a name="ensemble></a>
+<a name="ensemble"></a>
 ### Class 16: Ensembling, Bagging and Random Forests
 
 * Finish decision trees lesson ([notebook](notebooks/15_decision_trees.ipynb))
