@@ -16,7 +16,7 @@ Tuesday | Thursday
  | 3/31: [L06 Intro to Regression](#intro-to-regression), **Project Question and Dataset Due**
 4/5: [L07 Intro to Classification - K nearest neighbor](#knn) | 4/7: [L08 Evaluating Model Fit](#evaluating-fit)
 4/12: [L09 Classifying with Logistic Regression](#logistic-regression) | 4/14: [L10 Advanced model evaluation](#advanced-model)
-4/19: [L11 Standardization and Clustering](#class-11-standardization-and-clustering)| 4/21: L12: **First Project Presentations** + bonus topics
+4/19: [L11 Standardization and Clustering](#clustering)| 4/21: L12: **First Project Presentations** + bonus topics
 **Data science in the real world**|
 4/26: [L13 Natural Language Processing](#nlp) | 4/28: L14 Dimensionality reduction, **Draft Paper Due**
 5/3: [L15 Decision Trees](#decision) | 5/5: [L16 Ensembling, Bagging and Random Forests](#ensemble)
@@ -456,7 +456,8 @@ Name | Description
 
 -----
 
-### Class 11: Standardization and Clustering
+<a name="clustering"></a>
+### Class 11: Standardization (z-value scaling) and Clustering
 **By the end of this lesson you will be able to:**
 
 * Standardize features
@@ -465,12 +466,13 @@ Name | Description
 
 **Topics/Highlights**
 
-* Advanced scikit-learn ([notebook](notebooks/19_advanced_sklearn.ipynb))
+* Review solutions to exercise with bank marketing data ([notebook](notebooks/solutions/10_bank_exercise_solutions.ipynb), [data](data/bank-additional.csv), [data dictionary](https://archive.ics.uci.edu/ml/datasets/Bank+Marketing))
+* Advanced scikit-learn ([notebook](notebooks/11_advanced_sklearn.ipynb),[dataset description](http://archive.ics.uci.edu/ml/datasets/Wine))
     * [StandardScaler](http://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html): standardizing features
     * [Pipeline](http://scikit-learn.org/stable/modules/pipeline.html): chaining steps
-* Clustering ([slides](slides/19_clustering.pdf), [notebook](notebooks/19_clustering.ipynb))
+* Clustering ([slides](slides/11_clustering.pdf), [notebook](notebooks/11_clustering.ipynb),[data)](https://raw.githubusercontent.com/JamesByers/GA-SEA-DAT2/master/data/beer.txt)
     * K-means: [documentation](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html), [visualization 1](http://tech.nitoyon.com/en/blog/2013/11/07/k-means/), [visualization 2](http://www.naftaliharris.com/blog/visualizing-k-means-clustering/)
-    	* [My clustering of colors in an image.  Used a loop to generate clusters of 1 to 256 clusters. Made into an animated gif out of them.  Fun!](https://github.com/JamesByers/Cluster-analysis-of-image-RGB-colors/blob/master/Output%20Newport_seafood%20image%20and%20Animated%20GIF/Newport_seafood_k_means%2B%2B_cluster_animated.gif)
+    	* My clustering of colors in an image to posterize.  Used a loop to generate clusters of 1 to 256 clusters. Made an animated gif out of them.  Fun! [(repository](https://github.com/JamesByers/Cluster-analysis-of-image-RGB-colors),[gif)](https://github.com/JamesByers/Cluster-analysis-of-image-RGB-colors/blob/master/image_output_files/Newport_seafood_k_means%2B%2B_cluster_animated.gif)
     * DBSCAN: [documentation](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.DBSCAN.html), [visualization](http://www.naftaliharris.com/blog/visualizing-dbscan-clustering/)
 
 **Homework:**
