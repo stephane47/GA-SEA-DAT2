@@ -18,10 +18,18 @@ Tuesday | Thursday
 4/12: [L09 Classifying with Logistic Regression](#logistic-regression) | 4/14: [L10 Advanced model evaluation](#advanced-model)
 4/19: [L11 Standardization and Clustering](#clustering)| 4/21: L12: **First Project Presentations** + bonus topics
 **Data science in the real world**|
-4/26: [L13 Natural Language Processing](#nlp) | 4/28: L14 Dimensionality reduction, **Draft Paper Due**
+4/26: [L13 Natural Language Processing](#nlp1) | 4/28: [L14 Dimensionality reduction](#reduction), **Draft Paper Due**
 5/3: [L15 Decision Trees](#decision) | 5/5: [L16 Ensembling, Bagging and Random Forests](#ensemble)
-5/10: L17 Modeling with Time Series Data I, **Peer Review Due** | 5/12 L18 Modeling with Time Series Data II
+5/10: [L17 Modeling with Time Series Data I](#time1), **Peer Review Due** | 5/12 [L18 Modeling with Time Series Data II](#time2)
 5/17: L19 Where to go next + bonus topics | 5/19: **Final Project Presentations**
+ | 
+ | 
+ | 
+**Bonus Content** | 
+Bonus content: [SVC - Support Vector Classifier](#svc) | 
+Bonus content: [Naive Bayes Classifier](#bayes)| 
+Bonus content: [Intro to Neural Networks](#nn) | 
+
 
 ## Submission Forms
 
@@ -499,21 +507,57 @@ Name | Description
 
 -----
 
-<a name="nlp"></a>
+<a name="nlp1"></a>
 ### Class 13: Natural Language Processing
+**By the end of this lesson you will be able to:**
+
+* Apply the NLP techniques of Vectorization and Tokenization to text to create features
+* Use stop word removal and other techniques to increase the accuracy of your models using these features
+* Create features using Stemming and Lemmatization
+
+**Topics/Highlights**
+
 * Natural language processing ([notebook](notebooks/13_natural_language_processing.ipynb))
  * Vectorization/Tokenization
  * Stopword Removal
  * Other CountVectorizer options
  * Intro to [TextBlob](https://textblob.readthedocs.org/en/dev/)
-  * Stemming and Lemmatization
-  * Term Frequency-Inverse Document Frequency (TF-IDF)
-  *  Using TF-IDF to Summarize a Yelp Review
-  *  Sentiment Analysis
+ * Stemming and Lemmatization
+* NLP Exercise [(notebook)](notebooks/13_NLP_rotten_tomatoes_exercise.ipynb)
 
 **Homework:**
 * **Your draft paper is due on Thursday (12/22)!** Please submit a link to your project repository (with paper, code, data, and visualizations) before class
-* The [homework assignment](homework/14_yelp_review_text_homework.ipynb) with the [Yelp data](data/yelp.csv) is due on Tuesday (12/22)
+
+**NLP Resources:**
+* If you want to learn a lot more NLP, check out the excellent [video lectures](https://class.coursera.org/nlp/lecture) and [slides](http://web.stanford.edu/~jurafsky/NLPCourseraSlides.html) from this [Coursera course](https://www.coursera.org/course/nlp) (which is no longer being offered).
+* This slide deck defines many of the [key NLP terms](https://github.com/ga-students/DAT_SF_9/blob/master/16_Text_Mining/DAT9_lec16_Text_Mining.pdf).
+* [Natural Language Processing with Python](http://www.nltk.org/book/) is the most popular book for going in-depth with the [Natural Language Toolkit](http://www.nltk.org/) (NLTK).
+* [A Smattering of NLP in Python](https://github.com/charlieg/A-Smattering-of-NLP-in-Python/blob/master/A%20Smattering%20of%20NLP%20in%20Python.ipynb) provides a nice overview of NLTK
+* [spaCy](http://spacy.io/) is a newer Python library for text processing that is focused on performance (unlike NLTK).
+* If you want to get serious about NLP, [Stanford CoreNLP](http://nlp.stanford.edu/software/corenlp.shtml) is a suite of tools (written in Java) that is highly regarded.
+* When working with a large text corpus in scikit-learn, [HashingVectorizer](http://scikit-learn.org/stable/modules/feature_extraction.html#vectorizing-a-large-text-corpus-with-the-hashing-trick) is a useful alternative to CountVectorizer.
+* [Automatically Categorizing Yelp Businesses](http://engineeringblog.yelp.com/2015/09/automatically-categorizing-yelp-businesses.html) discusses how Yelp uses NLP and scikit-learn to solve the problem of uncategorized businesses.
+* [Modern Methods for Sentiment Analysis](http://districtdatalabs.silvrback.com/modern-methods-for-sentiment-analysis) shows how "word vectors" can be used for more accurate sentiment analysis.
+* [Identifying Humorous Cartoon Captions](http://www.cs.huji.ac.il/~dshahaf/pHumor.pdf) is a readable paper about identifying funny captions submitted to the New Yorker Caption Contest.
+
+-----
+<a name="reduction"></a>
+### Class 14: Dimensionality reduction
+**By the end of this lesson you will be able to:**
+* Apply TF-IDF to text (Natural language Processing)
+* Reduce dimensions using Principle Compoment analysis (Dimensionality reduction)
+
+**Topics/Highlights**
+
+* Natural Language Processing continued ([notebook](notebooks/13_natural_language_processing.ipynb))
+	* Term Frequency-Inverse Document Frequency (TF-IDF)
+  	*  Using TF-IDF to Summarize a Yelp Review
+  	*  Sentiment Analysis
+  	*  NLP Exercise continued with TF-IDF [(notebook)](notebooks/13_NLP_rotten_tomatoes_exercise.ipynb)
+* Dimensionality reduction
+	* [slides](slides/14_dimensionality_reduction.pdf)
+	* [notebook](notebooks/14_PCA_iris.ipynb)
+	* [notebook (images) and exercise](notebooks/14_PCA_images.ipynb)
 
 **NLP Resources:**
 * If you want to learn a lot more NLP, check out the excellent [video lectures](https://class.coursera.org/nlp/lecture) and [slides](http://web.stanford.edu/~jurafsky/NLPCourseraSlides.html) from this [Coursera course](https://www.coursera.org/course/nlp) (which is no longer being offered).
@@ -576,10 +620,74 @@ Name | Description
 
 -----
 
+<a name="time1"></a>
+### Class 17: Modeling with Time Series Data I
 
+* Time series intro ([slides](https://docs.google.com/presentation/d/1pbAy7Pj-jZGFlcqkuiX8f-y7ozdiotBskkXaD5jiaKc/edit?usp=sharing))
+* Exercises [(notebook)](notebooks/17_TS_starter-code.ipynb)
 
+-----
 
+<a name="time2"></a>
+### Class 17: Modeling with Time Series Data II
 
+* Time series intro ([slides](https://docs.google.com/presentation/d/12lBrOxtqhQRJ85PdkTr4qgcFy0DwUGzVy6bvdA5qyOs/edit?usp=sharing))
+* Exercises [(notebook)](notebooks/18_TS_starter-code.ipynb)
+
+-----
+
+<a name="svc"></a>
+### Bonus Content: Support Vector Classifier - SVC
+* SVC (Support Vector Classifier)
+ * [slides](slides/bonus_nn_svm.pdf)
+ * [notebook](notebooks/bonus_nn_svc.ipynb)
+
+**SVC resources**
+* For a more in-depth inderstanding of Support Vector Machines and SVC, read Chapter 9 of Hastie and Tibshirani's excellent book, [An Introduction to Statistical Learning](http://www-bcf.usc.edu/~gareth/ISL/). (It's a free PDF download!)
+* SVC videos by the authors of An Introduction to Statistical Learning can be found [here](http://www.dataschool.io/15-hours-of-expert-machine-learning-videos/).
+
+-----
+
+<a name="bayes"></a>
+### Bonus content: Naive Bayes and Text Data
+* Conditional probability and Bayes' theorem
+    * [Slides](slides/bonus_bayes_theorem.pdf) (adapted from [Visualizing Bayes' theorem](http://oscarbonilla.com/2009/05/visualizing-bayes-theorem/))
+    * Applying Bayes' theorem to iris classification ([notebook](notebooks/bonus_bayes_theorem_iris.ipynb))
+* Naive Bayes classification
+    * [Slides](slides/bonus_naive_bayes.pdf)
+    * Spam filtering example ([notebook](notebooks/bonus_naive_bayes_spam.ipynb))
+* Applying Naive Bayes to text data in scikit-learn ([notebook](notebooks/bonus_text_data_sklearn.ipynb))
+    * [CountVectorizer](http://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.CountVectorizer.html) documentation
+    * SMS messages: [data](data/sms.tsv), [data dictionary](https://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection)
+
+**Resources:**
+* Sebastian Raschka's article on [Naive Bayes and Text Classification](http://sebastianraschka.com/Articles/2014_naive_bayes_1.html) covers the conceptual material from today's class in much more detail.
+* For more on conditional probability, read these [slides](https://docs.google.com/presentation/d/1psUIyig6OxHQngGEHr3TMkCvhdLInnKnclQoNUr4G4U/edit#slide=id.gfc69f484_00), or read section 2.2 of the [OpenIntro Statistics textbook](https://www.openintro.org/stat/textbook.php?stat_book=os) (15 pages).
+* For an intuitive explanation of Naive Bayes classification, read this post on [airport security](http://www.quora.com/In-laymans-terms-how-does-Naive-Bayes-work/answer/Konstantin-Tt).
+* For more details on Naive Bayes classification, Wikipedia has two excellent articles ([Naive Bayes classifier](http://en.wikipedia.org/wiki/Naive_Bayes_classifier) and [Naive Bayes spam filtering](http://en.wikipedia.org/wiki/Naive_Bayes_spam_filtering)), and Cross Validated has a good [Q&A](http://stats.stackexchange.com/questions/21822/understanding-naive-bayes).
+* When applying Naive Bayes classification to a dataset with continuous features, it is better to use [GaussianNB](http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.GaussianNB.html) rather than [MultinomialNB](http://scikit-learn.org/stable/modules/generated/sklearn.naive_bayes.MultinomialNB.html). This [notebook](notebooks/bonus_types_of_naive_bayes.ipynb) compares their performances on such a dataset. Wikipedia has a short [description](https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Gaussian_naive_Bayes) of Gaussian Naive Bayes, as well as an excellent [example](https://en.wikipedia.org/wiki/Naive_Bayes_classifier#Sex_classification) of its usage.
+* These [slides](http://www.umiacs.umd.edu/~jbg/teaching/DATA_DIGGING/lecture_05.pdf) from the University of Maryland provide more mathematical details on both logistic regression and Naive Bayes, and also explain how Naive Bayes is actually a "special case" of logistic regression.
+* Andrew Ng has a [paper](http://ai.stanford.edu/~ang/papers/nips01-discriminativegenerative.pdf) comparing the performance of logistic regression and Naive Bayes across a variety of datasets.
+* If you enjoyed Paul Graham's article, you can read [his follow-up article](http://www.paulgraham.com/better.html) on how he improved his spam filter and this [related paper](http://www.merl.com/publications/docs/TR2004-091.pdf) about state-of-the-art spam filtering in 2004.
+* Yelp has found that Naive Bayes is more effective than Mechanical Turks at [categorizing businesses](http://engineeringblog.yelp.com/2011/02/towards-building-a-high-quality-workforce-with-mechanical-turk.html).
+
+-----
+
+<a name="nn"></a>
+### Bonus Content: Intro to Neural Networks
+* Artificial Neural Networks (ANN)
+ * [slides](slides/bonus_nn_svm.pdf)
+ * [notebook](notebooks/bonus_nn_svc.ipynb)
+
+**Neural Network resources**
+* For a more background of on Artificial Neural Networks view this series.  It describes the logic behind ANN from a low level logic step by step point of view: 
+ * Part 1 https://www.youtube.com/watch?v=bxe2T-V8XRs
+ * Part 2 https://www.youtube.com/watch?v=UJwK6jAStmg
+ * Part 3 https://www.youtube.com/watch?v=5u0jaA3qAGk
+ * Part 4 https://www.youtube.com/watch?v=GlcnxUlrtek
+ * Part 5 https://www.youtube.com/watch?v=pHMzNW8Agq4
+ * Part 6 https://www.youtube.com/watch?v=9KM9Td6RVgQ
+ * Part 7 https://www.youtube.com/watch?v=S4ZUwgesjS8
 
 
 
